@@ -1,0 +1,6 @@
+name: muehlbachler-global-dns
+description: "muehlbachler: Global DNS"
+runtime:
+  name: nodejs
+  options:
+    typescript: false
