@@ -56,3 +56,44 @@ config:
             type: TXT
             values:
               - v=spf1 include:mxroute.com ~all
+      niftyside-io:
+        data:
+          baseDomain: niftyside.io
+        entry:
+          adsp:
+            domains:
+              - _adsp._domainkey
+            type: TXT
+            values:
+              - dkim=all
+          dkim:
+            domains:
+              - x._domainkey
+            type: TXT
+            values:
+              - v=DKIM1; k=rsa; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvlGJN8YBCbUztLbfAS0uZwLecSOgID5vQDvLEvs96e661xflxeGGnL2R/B3cLvz7/MphEMh7bflUJOsDUpm41itlx6+nQVfn3dZiz7Omh2ql7P3ghY6NNFvOOvaZBWXgTEw6C1fBL+0ccvOtdrAjAuDm4/Tro2YSXqgbe/zFIyllvJ/qMM1rPVFwGkNJgijXDXiS7lgkdTviMtc4daWLsiYJG9mn5t+0xug9ijKy+nvKmyRPYFv0FB9ntKmZR0lG81urQZ69yRhQmXLQRe3sjpkyG69srLYUjiegVvDxNe2VpE4IJ9xPD7JZ0+tZ9eYTEKwj5AGFDQpBsXRm1hlooQIDAQAB
+          dmarc:
+            domains:
+              - _dmarc
+            type: TXT
+            values:
+              - v=DMARC1; p=reject; rua=mailto:postmaster@niftyside.io; ruf=mailto:postmaster@niftyside.io; fo=0; adkim=r; aspf=r; rf=afrf
+          mail-cname:
+            domains:
+              - mail
+            type: CNAME
+            values:
+              - lisa.mxrouting.net.
+          mx:
+            domains:
+              - ""
+            type: MX
+            values:
+              - 10 lisa.mxrouting.net.
+              - 20 lisa-relay.mxrouting.net.
+          root-txt:
+            domains:
+              - ""
+            type: TXT
+            values:
+              - v=spf1 include:mxroute.com ~all
