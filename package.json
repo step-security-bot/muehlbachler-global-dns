@@ -1,7 +1,7 @@
 {
   "name": "@muhlba91/muehlbachler-global-dns",
   "version": "0.0.0",
-  "description": "muehlbachler.io: Global DNS",
+  "description": "muehlbachler: Global DNS",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
   "repository": "https://github.com/muhlba91/muehlbachler-global-dns",
