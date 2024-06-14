@@ -7,6 +7,7 @@ This repository contains the Global DNS for the following domains using [Pulumi]
 
 - `muehlbachler.io`
 - `muehlbachler.xyz`
+- `niftyside.io`
 
 ---
 
