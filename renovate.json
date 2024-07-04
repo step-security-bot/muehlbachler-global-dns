@@ -12,7 +12,7 @@
     ],
     "enabledManagers": [
         "github-actions",
-        "docker"
+        "dockerfile"
     ],
     "github-actions": {
         "fileMatch": [
@@ -20,7 +20,7 @@
             "(^|/)action\\.ya?ml$"
         ]
     },
-    "docker": {
+    "dockerfile": {
         "fileMatch": [
             "(^|/|\\.)([Dd]ocker|[Cc]ontainer)file$",
             "(^|/)([Dd]ocker|[Cc]ontainer)file[^/]*$"
