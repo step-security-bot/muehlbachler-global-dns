@@ -1,0 +1,12 @@
+---
+'':
+  - type: NS
+    ttl: 21600
+    values:
+      - ns-cloud-a1.googledomains.com.
+      - ns-cloud-a2.googledomains.com.
+      - ns-cloud-a3.googledomains.com.
+      - ns-cloud-a4.googledomains.com.
+mail:
+  type: CNAME
+  value: lisa.mxrouting.net.

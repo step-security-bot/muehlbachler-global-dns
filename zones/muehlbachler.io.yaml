@@ -1,0 +1,48 @@
+---
+'':
+  - type: NS
+    ttl: 21600
+    values:
+      - ns-cloud-d1.googledomains.com.
+      - ns-cloud-d2.googledomains.com.
+      - ns-cloud-d3.googledomains.com.
+      - ns-cloud-d4.googledomains.com.
+  - type: MX
+    values:
+      - exchange: mx.soverin.net.
+        preference: 10
+      - exchange: mx02.soverin.net.
+        preference: 20
+      - exchange: mx03.soverin.net.
+        preference: 30
+  - type: TXT
+    values:
+      - OSSRH-92228
+      - Soverin=yzUy1tHzz74tD69h
+      - google-site-verification=XOfzgQK-Q9KQFknlfgzkjx0B0sfdMUbnE4nxIuvdt44
+      - v=spf1 +a include:soverin.net ~all
+_adsp._domainkey:
+  type: TXT
+  value: dkim=all
+_dmarc:
+  type: TXT
+  value: v=DMARC1\; p=reject\; rua=mailto:postmaster@muehlbachler.io\; ruf=mailto:postmaster@muehlbachler.io\; fo=0\; adkim=r\; aspf=r\; rf=afrf
+dkim._domainkey:
+  type: TXT
+  value: v=DKIM1\;k=rsa\;t=s\;s=email\;p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2MMGYgv5VclqCMXTZ7NrCJS1rS4w0+1Xe/H2fjs0sssKKZnOmwyGeiAl2jSzCt5vNerACqmbaRcBgGeOoJLo34ccBd7cvZdRPKIjXRHmDVzYrjVtwAS4T+r1rUnFnqxRDewM/VSaVKmeT/Kciq4vI7U5pIl2vFtu2UjwWhu5R8dMpzWu3uCA3gNkXD69GVqYSxFo+d5JOR9drFYCF1BGWuvBT9+vm5Y1TvAdA3TnkNGJdSRWk4v69rJBk/TopIHdFhFgQlAP0RY0hNyMxEtc70oXmcala7Oa2wzqCcPGT/v2+iUanLGr+/+E9zbCqWtcs09/mUW4tbEFIEtUDbDiQQIDAQAB
+soverin._domainkey:
+  type: TXT
+  value: v=DKIM1\; k=rsa\; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1ylAgJBKeG4b3gJCBdYywk3sseI42W5oV2Q8lqleFYd2BI1p4urFmSzkCkXLCX1M1dbzzipmH3ihNhjXOzeIia+RNrOK78sETTpL6EZKcLaM752FsSjN/ar5PAcm7Q7MDmtuJ4J5aCdwHyuBi2WLigHzf+bCmRCN6r83/xIn/OkLtsbeNFazCZlDjNDqRUEbCVec6iVy0sXKQ8v4kfVGgIBEribdVw4jZ4Kd3ImYKwcsfDuAobuF4I65S9t4AjIJd4OKzE5IooZFaHtuxvCifWy3Nf51LZGtABjWaOXKzsDzTbY/1F7ueK6pD4dYWiOFYGfWCJxKMCjLe+vy7W/kcwIDAQAB
+email:
+  type: NS
+  ttl: 3600
+  values:
+    - ns-cloud-a1.googledomains.com.
+    - ns-cloud-a2.googledomains.com.
+    - ns-cloud-a3.googledomains.com.
+    - ns-cloud-a4.googledomains.com.
+blog:
+  type: A
+  values:
+    - 162.159.152.4
+    - 162.159.153.4

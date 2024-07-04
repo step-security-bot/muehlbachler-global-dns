@@ -1,0 +1,29 @@
+---
+'':
+  - type: NS
+    ttl: 21600
+    values:
+      - ns-cloud-b1.googledomains.com.
+      - ns-cloud-b2.googledomains.com.
+      - ns-cloud-b3.googledomains.com.
+      - ns-cloud-b4.googledomains.com.
+  - type: MX
+    values:
+      - exchange: lisa.mxrouting.net.
+        preference: 10
+      - exchange: lisa-relay.mxrouting.net.
+        preference: 20
+  - type: TXT
+    value: v=spf1 include:mxroute.com ~all
+_adsp._domainkey:
+  type: TXT
+  value: dkim=all
+_dmarc:
+  type: TXT
+  value: v=DMARC1\; p=reject\; rua=mailto:postmaster@muehlbachler.xyz\; ruf=mailto:postmaster@muehlbachler.xyz\; fo=0\; adkim=r\; aspf=r\; rf=afrf
+x._domainkey:
+  type: TXT
+  value: v=DKIM1\; k=rsa\; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzPEk7WAXc1mhPkSDx1tCt56+cBeqnyblDuN7OstMtkiKgy8WKYO2lZLtyhKMTOUYaViDtMWPgAUcJwsHvfLLsxG9IAkCAirP+aSGTAAfcJm1fo8/5d3HfRWDPkQQNSxEuXAoIcLGcg58kqjKgI1zcU/cWLZ9TXm53Em/PdHDQ+JICNkRft4OhnIFhUTkCKU3npeB7/Mvj6Bu0ldwLAs73S+lAZ5nrG9qMjhFhHb7jJpSyvk++a5XOFVMr22AUzlFPONd6fS/yTwf/60hv5M3T3cRdJqT1e0i61tXec/wpBEh/dvQ6ipnfIrJjK4CPrI+q6kKY4n6YjHPxuCKrU9SNwIDAQAB
+mail:
+  type: CNAME
+  value: lisa.mxrouting.net.
