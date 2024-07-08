@@ -32,10 +32,10 @@ mail.d1n:
   value: mail.muehlbachler.io.
 autodiscover.d1n:
   type: CNAME
-  value: autodiscover.muehlbachler.io.
+  value: mail.muehlbachler.io.
 autoconfig.d1n:
   type: CNAME
-  value: autoconfig.muehlbachler.io.
+  value: mail.muehlbachler.io.
 # SimpleLogin: k3e
 # k3e:
 #   - type: MX
@@ -58,7 +58,7 @@ mail.k3e:
   value: mail.muehlbachler.io.
 autodiscover.k3e:
   type: CNAME
-  value: autodiscover.muehlbachler.io.
+  value: mail.muehlbachler.io.
 autoconfig.k3e:
   type: CNAME
-  value: autoconfig.muehlbachler.io.
+  value: mail.muehlbachler.io.
