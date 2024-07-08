@@ -20,7 +20,7 @@
       - OSSRH-92228
       - Soverin=yzUy1tHzz74tD69h
       - google-site-verification=XOfzgQK-Q9KQFknlfgzkjx0B0sfdMUbnE4nxIuvdt44
-      - v=spf1 +a include:soverin.net ~all
+      - v=spf1 mx include:soverin.net include:outbound.mailhop.org -all
 _adsp._domainkey:
   type: TXT
   value: dkim=all
@@ -30,6 +30,9 @@ _dmarc:
 soverin._domainkey:
   type: TXT
   value: v=DKIM1\; k=rsa\; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1ylAgJBKeG4b3gJCBdYywk3sseI42W5oV2Q8lqleFYd2BI1p4urFmSzkCkXLCX1M1dbzzipmH3ihNhjXOzeIia+RNrOK78sETTpL6EZKcLaM752FsSjN/ar5PAcm7Q7MDmtuJ4J5aCdwHyuBi2WLigHzf+bCmRCN6r83/xIn/OkLtsbeNFazCZlDjNDqRUEbCVec6iVy0sXKQ8v4kfVGgIBEribdVw4jZ4Kd3ImYKwcsfDuAobuF4I65S9t4AjIJd4OKzE5IooZFaHtuxvCifWy3Nf51LZGtABjWaOXKzsDzTbY/1F7ueK6pD4dYWiOFYGfWCJxKMCjLe+vy7W/kcwIDAQAB
+duo-1720464149007-41c17b02._domainkey:
+  type: TXT
+  value: v=DKIM1\; k=rsa\; s=email\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCsaOCv1oPxbjJV4dZ1Lb3nJouhGASWcRY82VjaGaejipMu+tP6F46DElGGy6kzGKHql0H76u5SqqlSc4wwMk90N1hoffTYlMZdsSkbQ0XcQnxYohQnTjBqMEzzHvtvHGq0WXOxOpd1UvwthVuVXPhU4MNaobdergbydkoLrxf78wIDAQAB
 email:
   type: NS
   ttl: 3600
