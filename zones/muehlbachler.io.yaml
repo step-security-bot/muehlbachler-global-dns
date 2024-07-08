@@ -27,9 +27,6 @@ _adsp._domainkey:
 _dmarc:
   type: TXT
   value: v=DMARC1\; p=reject\; rua=mailto:postmaster@muehlbachler.io\; ruf=mailto:postmaster@muehlbachler.io\; fo=0\; adkim=r\; aspf=r\; rf=afrf
-dkim._domainkey:
-  type: TXT
-  value: v=DKIM1\;k=rsa\;t=s\;s=email\;p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2MMGYgv5VclqCMXTZ7NrCJS1rS4w0+1Xe/H2fjs0sssKKZnOmwyGeiAl2jSzCt5vNerACqmbaRcBgGeOoJLo34ccBd7cvZdRPKIjXRHmDVzYrjVtwAS4T+r1rUnFnqxRDewM/VSaVKmeT/Kciq4vI7U5pIl2vFtu2UjwWhu5R8dMpzWu3uCA3gNkXD69GVqYSxFo+d5JOR9drFYCF1BGWuvBT9+vm5Y1TvAdA3TnkNGJdSRWk4v69rJBk/TopIHdFhFgQlAP0RY0hNyMxEtc70oXmcala7Oa2wzqCcPGT/v2+iUanLGr+/+E9zbCqWtcs09/mUW4tbEFIEtUDbDiQQIDAQAB
 soverin._domainkey:
   type: TXT
   value: v=DKIM1\; k=rsa\; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA1ylAgJBKeG4b3gJCBdYywk3sseI42W5oV2Q8lqleFYd2BI1p4urFmSzkCkXLCX1M1dbzzipmH3ihNhjXOzeIia+RNrOK78sETTpL6EZKcLaM752FsSjN/ar5PAcm7Q7MDmtuJ4J5aCdwHyuBi2WLigHzf+bCmRCN6r83/xIn/OkLtsbeNFazCZlDjNDqRUEbCVec6iVy0sXKQ8v4kfVGgIBEribdVw4jZ4Kd3ImYKwcsfDuAobuF4I65S9t4AjIJd4OKzE5IooZFaHtuxvCifWy3Nf51LZGtABjWaOXKzsDzTbY/1F7ueK6pD4dYWiOFYGfWCJxKMCjLe+vy7W/kcwIDAQAB
