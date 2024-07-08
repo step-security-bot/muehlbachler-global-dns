@@ -10,3 +10,55 @@
 mail:
   type: CNAME
   value: lisa.mxrouting.net.
+# SimpleLogin: d1n
+# d1n:
+#   - type: MX
+#     values:
+#       - exchange: mail.d1n.email.muehlbachler.io.
+#         preference: 10
+#   - type: TXT
+#     value: v=spf1 mx include:outbound.mailhop.org -all
+# _adsp._domainkey.d1n:
+#   type: TXT
+#   value: dkim=all
+# _dmarc.d1n:
+#   type: TXT
+#   value: v=DMARC1\; p=reject\; rua=mailto:postmaster@muehlbachler.io\; ruf=mailto:postmaster@muehlbachler.io\; fo=0\; adkim=r\; aspf=r\; rf=afrf
+relay._domainkey.d1n:
+  type: TXT
+  value: v=DKIM1\; k=rsa\; t=s\; s=email\; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA8cAIlhu/QnbxJQGIP1VOy29tWLQWD4VaRDKKX1iAwxmjxbvhr114UKk3e64ZF/3PjZhJmIYPDloTkXHfcajkajWffcNNUTH/AwJeA5jerouef6yHpovYk/0AUQJIJgjPhAgOP5b7rsFBkehdaj7ipB+VP2LNnAAbaoCqbNa5VmH/XcB9W6TI0L2nGbyXdCYcisv7T9m2tNksUei7hSqF2K0KiTlu6h47tqzUR2vaOsTBWkXn/AEqmLG+rkPQ0lTBnLQDi+VHZQnfBrJ3Vb4mjy/Gi3tZmS6F4/KRrD+Vt5Z4mS/lfSC/Hj5ZDbHs9eHrt9yshSgIOvb34w8JispOawIDAQAB
+mail.d1n:
+  type: CNAME
+  value: mail.muehlbachler.io.
+autodiscover.d1n:
+  type: CNAME
+  value: autodiscover.muehlbachler.io.
+autoconfig.d1n:
+  type: CNAME
+  value: autoconfig.muehlbachler.io.
+# SimpleLogin: k3e
+# k3e:
+#   - type: MX
+#     values:
+#       - exchange: mail.k3e.email.muehlbachler.io.
+#         preference: 10
+#   - type: TXT
+#     value: v=spf1 mx include:outbound.mailhop.org -all
+# _adsp._domainkey.k3e:
+#   type: TXT
+#   value: dkim=all
+# _dmarc.k3e:
+#   type: TXT
+#   value: v=DMARC1\; p=reject\; rua=mailto:postmaster@muehlbachler.io\; ruf=mailto:postmaster@muehlbachler.io\; fo=0\; adkim=r\; aspf=r\; rf=afrf
+relay._domainkey.k3e:
+  type: TXT
+  value: v=DKIM1\; k=rsa\; t=s\; s=email\; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0t4qVskTrm98m7haCkFL+BqnTwH8jaM453oGQ5RS/mVok6Ky+89cptZwXZiGf6UZrx4vjakcl6SSc/Pp3bQnOuedmlPQvyEPx8o5/2xeMpUoyq/r10mkeDXa0oogpd/Gg1KUafvvL63r6Dh7wMQ4JwcsDMn/v9OdzrWPMXJCusr6p8tIdpMUNsANQGb8UcWUlfhCLocr94bkzIJE9usZPU93jJsP9goM0ZM7DIsx8uymAIrtNNyA6qgEkmomr+upP0v1zU9FU29aFLW1rFMwqO9nwmghlIoxYV/2tE5cT3fQLO+zKSxVduJGQ3lxJzB9DafDJdfzoY3oxJbt0CisJQIDAQAB
+mail.k3e:
+  type: CNAME
+  value: mail.muehlbachler.io.
+autodiscover.k3e:
+  type: CNAME
+  value: autodiscover.muehlbachler.io.
+autoconfig.k3e:
+  type: CNAME
+  value: autoconfig.muehlbachler.io.
