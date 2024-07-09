@@ -11,22 +11,38 @@ mail:
   type: CNAME
   value: lisa.mxrouting.net.
 # SimpleLogin: d1n
-# d1n:
-#   - type: MX
-#     values:
-#       - exchange: mail.d1n.email.muehlbachler.io.
-#         preference: 10
-#   - type: TXT
-#     value: v=spf1 mx include:outbound.mailhop.org -all
-# _adsp._domainkey.d1n:
-#   type: TXT
-#   value: dkim=all
-# _dmarc.d1n:
-#   type: TXT
-#   value: v=DMARC1\; p=reject\; rua=mailto:postmaster@muehlbachler.io\; ruf=mailto:postmaster@muehlbachler.io\; fo=0\; adkim=r\; aspf=r\; rf=afrf
+d1n:
+  # - type: MX
+  #   values:
+  #     - exchange: mail.muehlbachler.io.
+  #       preference: 10
+  - type: MX
+    values:
+      - exchange: relay.email.muehlbachler.io.
+        preference: 10
+  - type: TXT
+    value: v=spf1 mx include:outbound.mailhop.org include:relay.email.muehlbachler.io -all
+_adsp._domainkey.d1n:
+  type: TXT
+  value: dkim=all
+_dmarc.d1n:
+  type: TXT
+  value: v=DMARC1\; p=reject\; rua=mailto:postmaster@muehlbachler.io\; ruf=mailto:postmaster@muehlbachler.io\; fo=0\; adkim=r\; aspf=r\; rf=afrf
 relay._domainkey.d1n:
   type: TXT
   value: v=DKIM1\; k=rsa\; t=s\; s=email\; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA8cAIlhu/QnbxJQGIP1VOy29tWLQWD4VaRDKKX1iAwxmjxbvhr114UKk3e64ZF/3PjZhJmIYPDloTkXHfcajkajWffcNNUTH/AwJeA5jerouef6yHpovYk/0AUQJIJgjPhAgOP5b7rsFBkehdaj7ipB+VP2LNnAAbaoCqbNa5VmH/XcB9W6TI0L2nGbyXdCYcisv7T9m2tNksUei7hSqF2K0KiTlu6h47tqzUR2vaOsTBWkXn/AEqmLG+rkPQ0lTBnLQDi+VHZQnfBrJ3Vb4mjy/Gi3tZmS6F4/KRrD+Vt5Z4mS/lfSC/Hj5ZDbHs9eHrt9yshSgIOvb34w8JispOawIDAQAB
+duo-1720516351589-0e11635b._domainkey.d1n:
+  type: TXT
+  value: v=DKIM1\; k=rsa\; s=email\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDY3SNZcqAv7ZdOqkwEupQk2EHmmueOc+nYwusGtLcSochTSd7vHsI11wvvWkCfToiQYA86gbLoUyZggXLJQQ9WVixL5WjcCeuZul2xjmQokRS4fPKsUu7lVmgjlTO3+zmqJjfb6fQk0Q0gtuPDm64C7GhkhryDkF0/ZahbeS+6jQIDAQAB
+dkim._domainkey.d1n:
+  type: CNAME
+  value: dkim._domainkey.relay.email.muehlbachler.io.
+dkim02._domainkey.d1n:
+  type: CNAME
+  value: dkim02._domainkey.relay.email.muehlbachler.io.
+dkim03._domainkey.d1n:
+  type: CNAME
+  value: dkim03._domainkey.relay.email.muehlbachler.io.
 mail.d1n:
   type: CNAME
   value: mail.muehlbachler.io.
@@ -40,22 +56,38 @@ mta-sts.d1n:
   type: CNAME
   value: mail.muehlbachler.io.
 # SimpleLogin: k3e
-# k3e:
+k3e:
 #   - type: MX
 #     values:
-#       - exchange: mail.k3e.email.muehlbachler.io.
+#       - exchange: mail.muehlbachler.io.
 #         preference: 10
-#   - type: TXT
-#     value: v=spf1 mx include:outbound.mailhop.org -all
-# _adsp._domainkey.k3e:
-#   type: TXT
-#   value: dkim=all
-# _dmarc.k3e:
-#   type: TXT
-#   value: v=DMARC1\; p=reject\; rua=mailto:postmaster@muehlbachler.io\; ruf=mailto:postmaster@muehlbachler.io\; fo=0\; adkim=r\; aspf=r\; rf=afrf
+  - type: MX
+    values:
+      - exchange: relay.email.muehlbachler.io.
+        preference: 10
+  - type: TXT
+    value: v=spf1 mx include:outbound.mailhop.org include:relay.email.muehlbachler.io -all
+_adsp._domainkey.k3e:
+  type: TXT
+  value: dkim=all
+_dmarc.k3e:
+  type: TXT
+  value: v=DMARC1\; p=reject\; rua=mailto:postmaster@muehlbachler.io\; ruf=mailto:postmaster@muehlbachler.io\; fo=0\; adkim=r\; aspf=r\; rf=afrf
 relay._domainkey.k3e:
   type: TXT
   value: v=DKIM1\; k=rsa\; t=s\; s=email\; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0t4qVskTrm98m7haCkFL+BqnTwH8jaM453oGQ5RS/mVok6Ky+89cptZwXZiGf6UZrx4vjakcl6SSc/Pp3bQnOuedmlPQvyEPx8o5/2xeMpUoyq/r10mkeDXa0oogpd/Gg1KUafvvL63r6Dh7wMQ4JwcsDMn/v9OdzrWPMXJCusr6p8tIdpMUNsANQGb8UcWUlfhCLocr94bkzIJE9usZPU93jJsP9goM0ZM7DIsx8uymAIrtNNyA6qgEkmomr+upP0v1zU9FU29aFLW1rFMwqO9nwmghlIoxYV/2tE5cT3fQLO+zKSxVduJGQ3lxJzB9DafDJdfzoY3oxJbt0CisJQIDAQAB
+duo-1720516451761-c5ec23ae._domainkey.k3e:
+  type: TXT
+  value: v=DKIM1\; k=rsa\; s=email\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDD5RNtF5gOVNDt9FMSVOt3SYw04JmCWjnhyapTNvNZC2+vEyhhpcxnFDgWm48Hr2f05Em24zGHJnvN+etlguLBDUcmeKc/eGBSqqdgIbRqLn5qGRzuAYrSG/bY2vpkFx57MSXUrrdoC3U3BQOZgLHKV7bQ5r0yk+kgSOuFFz6o3wIDAQAB
+dkim._domainkey.k3e:
+  type: CNAME
+  value: dkim._domainkey.relay.email.muehlbachler.io.
+dkim02._domainkey.k3e:
+  type: CNAME
+  value: dkim02._domainkey.relay.email.muehlbachler.io.
+dkim03._domainkey.k3e:
+  type: CNAME
+  value: dkim03._domainkey.relay.email.muehlbachler.io.
 mail.k3e:
   type: CNAME
   value: mail.muehlbachler.io.
