@@ -1,0 +1,48 @@
+---
+'':
+  - type: NS
+    ttl: 21600
+    values:
+      - ns-cloud-a1.googledomains.com.
+      - ns-cloud-a2.googledomains.com.
+      - ns-cloud-a3.googledomains.com.
+      - ns-cloud-a4.googledomains.com.
+  - type: MX
+    values:
+      - exchange: mx.soverin.net.
+        preference: 10
+      - exchange: mx02.soverin.net.
+        preference: 20
+      - exchange: mx03.soverin.net.
+        preference: 30
+  - type: TXT
+    values:
+      - Soverin=yafmDD13uTzgxRzT
+      - v=spf1 mx include:soverin.net include:outbound.mailhop.org -all
+_adsp._domainkey:
+  type: TXT
+  value: dkim=all
+_dmarc:
+  type: TXT
+  value: v=DMARC1\; p=reject\; rua=mailto:postmaster@muehlbachler.io\; ruf=mailto:postmaster@muehlbachler.io\; fo=0\; adkim=r\; aspf=r\; rf=afrf
+soverin._domainkey:
+  type: TXT
+  value: v=DKIM1\; k=rsa\; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2dA1isNUhgMSYZvzgWF3hy0MLXzQEZ54eOELovC1vRI+3iMmNaMmoh4KUlGMfq9uSICtZzu7rJpBO1VeWJpotPgWHMtnOKUeJEcv5IMOc9DyawTr8Q/LADYWxXgy10p+NK/4jmnwZB4xF6XVraTxSQ7jtogdNW544X0GcJMy+5+6BUsln7sjDqLkPIZ+/AL7SRGPa+qsZEKmxb+T6Z5eNv9zEo0liR6Ev5By6ADeJME5tcUip4sSik45brL5kdpoVoSBv+kFOCuKeMv2ZfcBrmqxLT3hYKNGE1vvgLVMKEPQd7LOvt3OsHl2Y+3TddYwQvAwC7u9tnV0O6TYr1Fv+QIDAQAB
+dkim._domainkey:
+  type: TXT
+  value: v=DKIM1\; k=rsa\; t=s\; s=email\; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuEJD46CnJbLwDpFNB+vDCCA67/UEEnHflIDMAcwPi3Hu+AOKphhFt/aK1bp+bkJPfbN6LGNNV2D9hm9HLtiL7oj3nsFpgCenhHA9tB6QF+gABvxVfAwRojMN1i4JbsDYqYG6EP+DFdSKyxaixihVYKSzREA+KA+rIrYijt2XKj1MZeq/zhXQ/Ut0qfvLD9D7X8WzwPubpER+Q2eKOQ301yyIL7tZSyxM0H9lwGVPe7t5p3QigwCH8LPGmwynft5EoVwBBy1zOCGXRTD56khCTG28lfqzkNXmx8AEcGMZPffdu4nfBUd3zj3xB8/dxLsn/Bq4FA/OoId5juoGCeL2MwIDAQAB
+duo-1720464149007-41c17b02._domainkey:
+  type: TXT
+  value: v=DKIM1\; k=rsa\; s=email\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCsaOCv1oPxbjJV4dZ1Lb3nJouhGASWcRY82VjaGaejipMu+tP6F46DElGGy6kzGKHql0H76u5SqqlSc4wwMk90N1hoffTYlMZdsSkbQ0XcQnxYohQnTjBqMEzzHvtvHGq0WXOxOpd1UvwthVuVXPhU4MNaobdergbydkoLrxf78wIDAQAB
+mail:
+  type: CNAME
+  value: mail.muehlbachler.io.
+autodiscover:
+  type: CNAME
+  value: mail.muehlbachler.io.
+autoconfig:
+  type: CNAME
+  value: mail.muehlbachler.io.
+mta-sts:
+  type: CNAME
+  value: mail.muehlbachler.io.

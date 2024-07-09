@@ -40,3 +40,5 @@ zones:
   email.muehlbachler.io.: *dns_muehlbachler_dns
   muehlbachler.xyz.: *dns_muehlbachler_dns
   niftyside.io.: *dns_muehlbachler_dns
+  muehlbachler.org.: *dns_muehlbachler_dns
+  niftyside.com.: *dns_muehlbachler_dns

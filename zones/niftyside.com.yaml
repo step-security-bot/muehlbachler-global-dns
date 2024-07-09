@@ -3,10 +3,10 @@
   - type: NS
     ttl: 21600
     values:
-      - ns-cloud-d1.googledomains.com.
-      - ns-cloud-d2.googledomains.com.
-      - ns-cloud-d3.googledomains.com.
-      - ns-cloud-d4.googledomains.com.
+      - ns-cloud-a1.googledomains.com.
+      - ns-cloud-a2.googledomains.com.
+      - ns-cloud-a3.googledomains.com.
+      - ns-cloud-a4.googledomains.com.
   - type: MX
     values:
       - exchange: lisa.mxrouting.net.
@@ -26,10 +26,10 @@ x._domainkey:
   value: v=DKIM1\; k=rsa\; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvlGJN8YBCbUztLbfAS0uZwLecSOgID5vQDvLEvs96e661xflxeGGnL2R/B3cLvz7/MphEMh7bflUJOsDUpm41itlx6+nQVfn3dZiz7Omh2ql7P3ghY6NNFvOOvaZBWXgTEw6C1fBL+0ccvOtdrAjAuDm4/Tro2YSXqgbe/zFIyllvJ/qMM1rPVFwGkNJgijXDXiS7lgkdTviMtc4daWLsiYJG9mn5t+0xug9ijKy+nvKmyRPYFv0FB9ntKmZR0lG81urQZ69yRhQmXLQRe3sjpkyG69srLYUjiegVvDxNe2VpE4IJ9xPD7JZ0+tZ9eYTEKwj5AGFDQpBsXRm1hlooQIDAQAB
 dkim._domainkey:
   type: TXT
-  value: v=DKIM1\; k=rsa\; t=s\; s=email\; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA84KKVp4+kjP9g6UsVdIBr7066RUzmAZFj1yi8J3spYj/l41ATd7rm2BSkvi5FIzgoUYsfT7jkUSvSfSTjg3WrBr9mqfRgMiD/LlXDMCCYHomaHY3DWS75htVgqE1IURLsgtqnZfVROLl1CNBlSMziSmE+Jml98kb1r+eC7hNXdMhNrXokQCnCyqkJ0vl2nIPqWOqc8g41eJnq/0fbYu8CO4hvRJtM4rW2gwjCRgRPzA/KLP3kmDXKIWFChp3xOwBMr639FeYOrPpiYUihsm3XQ3QK3A9wjxFjv2z1cv8vmFotbhtT8AY1OhHY120qLlZKpO3ePzUaHlEXu1+eKxo4wIDAQAB
-duo-1720524651207-76409120._domainkey:
+  value: v=DKIM1\; k=rsa\; t=s\; s=email\; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAiAqxqvwfl4d5mhoRnowoFHrVX/LlNz6iQWlbqPG8BIY5BVwBFzQ/f/mtJ3B7AfOkuELXVxir6qn8eQjMTunZq8nd6IrXMciE8K5DnGxvevuPNr+CztC/+7UUGb5nEYEYVj5mKntTmoIYkgtOWMFxQzJDZcXtlK83wt6N5BJT8yvYStGAbfJ7cQa14ucEQMHTAlP5Iquxkk5cfMcuDqymnv84X0jvX7JYVs7gY7S87ShcXMwbcJCBiICdeM9nlrPD3auGIeTKY3dUDE9D6IAmJAvbjEl7G4xVnFaZjtkII6n5jC9ci5wu0+ql6yfOZct8TxxTNCnBGTR2U+tlw33EywIDAQAB
+duo-1720524621209-1e0277de._domainkey:
   type: TXT
-  value: v=DKIM1\; k=rsa\; s=email\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC8XWZ6e+M7aG6wizvserRf/lUit96588B66g1WUB49nM1M8IS/vPwkR6kAkBLNraFYVKLR3G8o6uZUre5IpxtP2iPe9APgcbR7dAXDFhZzsDnH5ySZOzhfUJRRKVhra6/8Qfva03VkYrqdOv9IZSMLvSHbph7qVnmVrqczMvis6QIDAQAB
+  value: v=DKIM1\; k=rsa\; s=email\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDQh3CIy1cSbG4+uLZKhSbQ+UVj5tjQ1uDxEV43gvoFgjwx2/lQqcs5AU+uMTPjrgwT7TDsX41rq7Wk1FODa5NC6YJD+dq+Btyh/y4zw8TyCo53Xd2Ei1Y7JVGEJErd2nKOF8vmMzANdI4b++bP9Rp1vQAQCXKvUI2QwSCKhjEnewIDAQAB
 mail:
   type: CNAME
   value: lisa.mxrouting.net.
