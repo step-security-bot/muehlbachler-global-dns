@@ -12,13 +12,9 @@ mail:
   value: lisa.mxrouting.net.
 # SimpleLogin: d1n
 d1n:
-  # - type: MX
-  #   values:
-  #     - exchange: mail.muehlbachler.io.
-  #       preference: 10
   - type: MX
     values:
-      - exchange: relay.email.muehlbachler.io.
+      - exchange: mail.muehlbachler.io.
         preference: 10
   - type: TXT
     value: v=spf1 mx include:outbound.mailhop.org include:relay.email.muehlbachler.io -all
@@ -57,13 +53,9 @@ mta-sts.d1n:
   value: mail.muehlbachler.io.
 # SimpleLogin: k3e
 k3e:
-#   - type: MX
-#     values:
-#       - exchange: mail.muehlbachler.io.
-#         preference: 10
   - type: MX
     values:
-      - exchange: relay.email.muehlbachler.io.
+      - exchange: mail.muehlbachler.io.
         preference: 10
   - type: TXT
     value: v=spf1 mx include:outbound.mailhop.org include:relay.email.muehlbachler.io -all
