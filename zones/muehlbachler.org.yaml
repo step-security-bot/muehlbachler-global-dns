@@ -9,12 +9,8 @@
       - ns-cloud-a4.googledomains.com.
   - type: MX
     values:
-      - exchange: mx.soverin.net.
+      - exchange: mail.muehlbachler.io.
         preference: 10
-      - exchange: mx02.soverin.net.
-        preference: 20
-      - exchange: mx03.soverin.net.
-        preference: 30
   - type: TXT
     values:
       - Soverin=yafmDD13uTzgxRzT
