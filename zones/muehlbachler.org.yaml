@@ -27,9 +27,9 @@ soverin._domainkey:
 dkim._domainkey:
   type: TXT
   value: v=DKIM1\; k=rsa\; t=s\; s=email\; p=MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuEJD46CnJbLwDpFNB+vDCCA67/UEEnHflIDMAcwPi3Hu+AOKphhFt/aK1bp+bkJPfbN6LGNNV2D9hm9HLtiL7oj3nsFpgCenhHA9tB6QF+gABvxVfAwRojMN1i4JbsDYqYG6EP+DFdSKyxaixihVYKSzREA+KA+rIrYijt2XKj1MZeq/zhXQ/Ut0qfvLD9D7X8WzwPubpER+Q2eKOQ301yyIL7tZSyxM0H9lwGVPe7t5p3QigwCH8LPGmwynft5EoVwBBy1zOCGXRTD56khCTG28lfqzkNXmx8AEcGMZPffdu4nfBUd3zj3xB8/dxLsn/Bq4FA/OoId5juoGCeL2MwIDAQAB
-duo-1720464149007-41c17b02._domainkey:
+duo-1720610523619-bf293e26._domainkey:
   type: TXT
-  value: v=DKIM1\; k=rsa\; s=email\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCsaOCv1oPxbjJV4dZ1Lb3nJouhGASWcRY82VjaGaejipMu+tP6F46DElGGy6kzGKHql0H76u5SqqlSc4wwMk90N1hoffTYlMZdsSkbQ0XcQnxYohQnTjBqMEzzHvtvHGq0WXOxOpd1UvwthVuVXPhU4MNaobdergbydkoLrxf78wIDAQAB
+  value: v=DKIM1\; k=rsa\; s=email\; p=MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQC3N0Qs3drPWD43jfS2dicihvJi0nEWsoRNpmucvqv1wATKpggceHOylYGvwPIh4hOBBP3394UAFPpqYG3Exuo6URZKy2H4fr1gH7ZcKSduMdlqBLiJoWCNoZj1Wq+p/twU+FA1o7GMXxHVlG9HtcDe1TFKnLDtSd6Zfk4Is824dwIDAQAB
 mail:
   type: CNAME
   value: mail.muehlbachler.io.
