@@ -7,10 +7,6 @@
       - ns-cloud-a2.googledomains.com.
       - ns-cloud-a3.googledomains.com.
       - ns-cloud-a4.googledomains.com.
-# SimpleLogin: web interface
-aliases:
-  - type: CNAME
-    value: mail.muehlbachler.io.
 # SimpleLogin: relay
 relay:
   - type: MX
