@@ -16,6 +16,7 @@
       - OSSRH-92228
       - Soverin=yzUy1tHzz74tD69h
       - google-site-verification=XOfzgQK-Q9KQFknlfgzkjx0B0sfdMUbnE4nxIuvdt44
+      - google-site-verification=OjzBhgAlyxCNrSlxyUpmj88ix5gf3FR3-30fepO-ca8
       - v=spf1 mx include:soverin.net include:outbound.mailhop.org -all
 _adsp._domainkey:
   type: TXT
